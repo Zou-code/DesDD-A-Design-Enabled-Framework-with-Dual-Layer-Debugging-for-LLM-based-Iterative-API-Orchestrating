@@ -1,5 +1,5 @@
 
-def prompt_implement(requirement_specification, API_doc, user_requirement) -> str:
+def prompt_implement(API_doc, user_requirement) -> str:
 #     prompt = ''' \
 # API Composer {
 #     @Persona {
@@ -25,14 +25,12 @@ def prompt_implement(requirement_specification, API_doc, user_requirement) -> st
 #         Parameters: Lists the variables that can be set in the API request to filter or sort the results;
 #     }
 #     @Knowledge{
-#         Requirement Specification:
-#         {reasoning_modules}
 #
 #         API Documentation:
 # {API_doc}
 #     }
 #     @Instruction{
-#         @Command Based on the analysis in the reasoning modules, select the appropriate API from the API \
+#         @Command Based on the user requirement, select the appropriate API from the API \
 # documentation to complete the entered task;
 #
 #         @Rule1 Each selected API will be encapsulated as a API call function named "Tool \
@@ -114,13 +112,10 @@ descriptions, parameters, and usage scenarios, designed to help select the most 
         Scenario: Offers an example of how the API can be applied to a specific task;
         Parameters: Lists the variables that can be set in the API request to filter or sort the results;
         User_requirement: user_requirement: The specific needs and expectations provided by the users;
-        Requirement_specification: Outline the comprehensive needs and expectations for a project or system,\
-serving as a critical guide for development and ensuring alignment with stakeholder objectives. The  Requirement_specification\
-is obtained by analyzing User_requirement;
         Selected_APIs: APIs selected from Alternative_ToolAPI_List, which will be used to fulfill user_requirement;
     }
     @Instruction{
-        @Command Based on the Requirements_specification, select the most appropriate APIs from the Alternative_ToolAPI_List to fulfill the user's requirements;
+        @Command Based on the user requirement, select the most appropriate APIs from the Alternative_ToolAPI_List to fulfill the user's requirements;
         @Rule1: You should list the APIs that you selected;
         @Rule2: You should also consider the information in the API_calling_dependency when choosing an API, as there may be dependencies between APIs;
         @Rule3: To avoid potential conflicts between APIs from different tools, it is advisable to select APIs from the same tool to fulfill user requirements whenever possible. If the APIs within the same tool cannot meet the user's needs, then consider choosing other APIs from different tools;
@@ -139,9 +134,6 @@ branches, and loops. The necessary details should be written in natural language
         
     }
     @Knowledge{
-        Requirement Specification:
-        {requirement_specification}
-
         Alternative ToolAPI List:
 {API_list}
     }
@@ -164,7 +156,6 @@ branches, and loops. The necessary details should be written in natural language
     }
     ```
 }'''
-    prompt = prompt.replace('{requirement_specification}', requirement_specification, 1)
     prompt = prompt.replace('{API_list}', API_doc, 1)
     prompt = prompt.replace('{user_requirement}', user_requirement, 1)
     return prompt
