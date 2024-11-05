@@ -1,0 +1,39 @@
+tool_name,tool_description,head,type
+Movies API,"Experience the future of entertainment data integration with our premium API solution. Elevate your application's capabilities with seamless access to comprehensive movie and TV show information, boasting advanced filtering options. Our API is the definitive source for crucial streaming service data, including Netflix, Prime, Disney, HBO, Hulu, and many others. Empower your users to effortlessly discover the latest content available on their preferred platforms. Stay at the forefront of the industry and enhance your app or service's entertainment offerings.",https://movies-api14.p.rapidapi.com,Movie
+OTT Details,"Get the BIGGEST Movie and TV show API in the internet.
+
+---Data---
+
+Over 150+ Streaming Platforms supported
+Over 25+ Genres
+Over 320+ languages
+Updated Daily
+Support for US and India regions
+Support Movies and TV shows
+Movie Cast details
+User Reviews, Movie quotes and plot summary from IMDB.com
+Cast Bio, Date of birth, Role, etc.
+URL to Streaming Platform video
+---Features---
+
+Search by IMDB ID
+Search by movie title
+Filter by Language, Genres, IMDB rating, Year of release
+** If you'd like to get additional data, please don't hesitate to contact us. We will enrich our API for you.
+
+---Supported Streaming Platforms--- US: Netflix, Amazon Prime Video, Disney Plus, fuboTV, Apple TV Plus, Apple iTunes, Hulu, HBO Max, Peacock, Peacock Premium, Amazon Video, Google Play Movies, YouTube, YouTube Premium, YouTube Free, HBO Now, CBS, Funimation Now, FandangoNOW, IMDb TV, The Roku Channel, Hoopla, The CW, CW Seed, Vudu, VUDU Free, Quibi, Starz, Criterion Channel, Showtime, PBS, Pantaflix, FXNow, Tubi TV, DC Universe, Kanopy, Comedy Central, Microsoft Store, Crunchyroll, Sun Nxt, Redbox, Max Go, HBO Go, ABC, DIRECTV, Tribeca Shortlist, Crackle, AMC Theatres, AMC, Fandor, Curiosity Stream, NBC, Epix, Freeform, History, Syfy, A&E, Lifetime, Shudder, Screambox, Acorn TV, Sundance Now, Popcornflix, BritBox, GuideDoc, realeyz, Mubi, Fandango, Netflix Kids, Pantaya, Boomerang, Urban Movie Channel, History Vault, Dove Channel, Yupp TV, Eros Now, Magnolia Selects, WWE Network, MyOutdoorTV, Nickhits Amazon Channel, Noggin Amazon Channel, Hopster TV, Laugh Out Loud, Smithsonian Channel, Pure Flix, Hallmark Movies, Lifetime Movie Club, PBS Kids Amazon Channel, Boomerang Amazon Channel, Cinemax Amazon Channel, Pantaya Amazon Channel, Hallmark Movies Now Amazon Channel, PBS Masterpiece Amazon Channel, Viewster Amazon Channel, MZ Choice Amazon Channel, Sling TV, Pluto TV, HBO Now Amazon Channel, Showtime Amazon Channel, CBS All Access Amazon Channel, Classix, Dekkoo, Shout! Factory TV, Chai Flicks, OVID, HiDive, Mhz Choice, Retrocrush, Starz Play Amazon Channel, Shudder Amazon Channel, Mubi Amazon Channel, AcornTV Amazon Channel, BritBox Amazon Channel, Fandor Amazon Channel, Screambox Amazon Channel, Sundance Now Amazon Channel, Cartoon Network, Adult Swim, USA Network, Fox, FlixFling, Bet+ Amazon Channel, Rakuten Viki, AMC on Demand, Darkmatter TV, TCM, Bravo TV, TNT, Food Network, BBC America, IndieFlix, AHCTV, TLC, HGTV, DIY Network, Investigation Discovery, Science Channel, Destination America, Animal Planet, Discovery Life, Discovery, Motor Trend, Cooking Channel, Travel Channel, Paramount Network, Here TV, TV Land, Logo TV and VH1
+
+INDIA: Netflix, Amazon Prime Video, Hotstar, Voot, Viu, Jio Cinema, Zee5, Apple iTunes, Eros Now, Google Play Movies, Mubi, Apple TV Plus, Sony Liv, YouTube, GuideDoc, Netflix Kids, Tubi TV, Bookmyshow, Yupp TV, Sun Nxt, Crunchyroll, Hoichoi, Alt Balaji, Hungama Play, Curiosity Stream,",https://ott-details.p.rapidapi.com,Movie
+Advanced Movie Search,"Search for movies via advanced queries like genre, name, etc. And get all their details",https://advanced-movie-search.p.rapidapi.com,Movie
+Anime DB,,https://anime-db.p.rapidapi.com,Movie
+Pinnacle Odds,,,Sports
+Air Scraper,,,Travel
+manatee jokes,,,Science
+Chinese Food DB,,,Food
+The Vegan Recipes DB,,,Food
+Low Carb Recipes,,,Food
+feriados brasileiros,,,Sports
+ODDS API,,,Sports
+La Liga,,,Sports
+NBA API Free Data,,,Sports
+Global Data,,,Sports
