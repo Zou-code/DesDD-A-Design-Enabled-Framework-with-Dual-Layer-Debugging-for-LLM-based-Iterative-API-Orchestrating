@@ -1,13 +1,8 @@
 
 
-def prompt_task_plan_error(requirement_specification, API_doc, user_requirement, error_example):
+def prompt_task_plan_error(API_doc, user_requirement, error_example):
     """
     新的task plan，用于解决用户需求，但是原来的plan出现了错误，请根据错误示例，给出新的task plan
-    :param user_requirement:
-    :param requirement_specification:
-    :param API_doc:
-    :param error_example:
-    :return:
     """
     prompt = '''\
 You are an API composer Agent.
@@ -29,9 +24,6 @@ descriptions, parameters, and usage scenarios, designed to help select the most 
         Scenario: Offers an example of how the API can be applied to a specific task;
         Parameters: Lists the variables that can be set in the API request to filter or sort the results;
         User_requirement: user_requirement: The specific needs and expectations provided by the users;
-        Requirement_specification: Outline the comprehensive needs and expectations for a project or system,\
-serving as a critical guide for development and ensuring alignment with stakeholder objectives. The  Requirement_specification\
-is obtained by analyzing User_requirement;
         Selected_APIs: APIs selected from Alternative_ToolAPI_List, which will be used to fulfill user_requirement, and it may contain errors;
         new_selected_APIs: According to the error report, the new API list modified on the basis of Selected_APIs;
         pseudo_code: Python-like pseudocode that describes how to use the selected APIs to meet user_requirement, and it may contain errors;
@@ -53,9 +45,6 @@ Alternative_ToolAPI_List to new_selected_APIs, otherwise there is no need to cha
         
     }
     @Knowledge{
-        Requirement Specification:
-        {requirement_specification}
-
         Alternative ToolAPI List:
 {API_list}
     }
@@ -78,7 +67,7 @@ Alternative_ToolAPI_List to new_selected_APIs, otherwise there is no need to cha
     }
 }
 '''
-    prompt = prompt.replace('{requirement_specification}', requirement_specification).replace('{API_list}', API_doc).replace('{user_requirement}', user_requirement).replace('{error_example}', error_example)
+    prompt = prompt.replace('{API_list}', API_doc).replace('{user_requirement}', user_requirement).replace('{error_example}', error_example)
     prompt = prompt.replace('{error_example}',error_example)
     return prompt
 
